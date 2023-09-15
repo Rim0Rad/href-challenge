@@ -1,0 +1,260 @@
+*{
+    /* border: 1px solid black */
+}
+
+#body {
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    /* UI Properties */
+    letter-spacing: 0px;
+    margin: 0px;
+}
+/* HEADER */
+#header {
+    position: relative;
+    /* Layout Properties */
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 100vh;
+    min-width: 1000px;
+    /* UI Properties */
+    mix-blend-mode: multiply;
+    font: normal normal normal 30px/37px Montserrat;
+}
+#header::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/SEVEN\ CAPITAL_ONE\ THAMES\ VALLEY_V05\ REAR\ [Low\ Res].png');
+    background-size: cover;
+    filter: brightness(90%)
+}
+
+#background {
+    position: relative;
+}
+
+#headerBg {
+    position: absolute;
+    z-index: -10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-width: 1000px;
+    height: 100vh;
+    filter: brightness(90%);
+
+}
+#logo {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 410px;
+    height: 410px;
+}
+
+h1 {
+    position: absolute;
+    top: 539px;
+    left: 187px;
+    width: 548px;
+    height: 81px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 600 65px/70px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+#buttonContainer {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 49px;
+}
+
+#button {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+#button:hover {
+    width: 80px;
+    height: 80px;
+}
+#button:hover > a > img{
+    width: 46px;
+    
+}
+
+#buttonImage {
+    width: 36px;
+    height: auto;
+}
+
+/* MAIN */
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mainTextContainer{
+    display: flex;
+    justify-content: center;
+}
+#mainText{
+    /* Layout Properties */
+    margin-top: 123px;
+    max-width: 1000px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 30px/37px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+#separator {
+    width: 152px;
+    /* UI Properties */
+    border: 1px solid #AFAFAF;
+    opacity: 1;
+    margin: 80px 0;
+}
+
+#contactDetailsBar{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    height: 100px;
+
+
+}
+#contactDetailsBar > p {
+    font: normal normal medium 20px/24px Montserrat;
+    margin-right: 20px;
+}
+#contactDetailsBar > a > img {
+    width: 41px;
+    height: 41px;
+    margin: 0 20px;
+}
+#contactDetailsBar > a > img:hover {
+    width: 45px;
+    height: 45px;
+    margin: 0 18px;
+}
+
+#contactPanel {
+    /* Layout Properties */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 480px;
+    /* UI Properties */
+    background: #FBF8F5 0% 0% no-repeat padding-box;
+    /* opacity: 1; */
+}
+#inputPanel{
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+h2 {
+    font: normal normal 600 30px/37px Montserrat;
+}
+::placeholder {
+    font: normal normal 600 20px/24px Montserrat;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+input, textarea{
+    /* Layout Properties */
+    width: 393px;
+    height: 48px;
+    padding-left: 10px;
+    /* UI Properties */
+    border: 1px solid #000000;
+    border-radius: 10px;
+    opacity: 1;
+    font: normal normal 600 20px/24px Montserrat black
+}
+#messageBox {
+    margin-top: 20px;
+    height: 155px;
+    width: 836px;
+}
+
+#submitBTContainer{
+    display: flex;
+    justify-content: center;
+}
+#messageSubmitBT {
+    margin: 20px;
+}
+#messageSubmitBT:hover {
+    background-color: white;
+}
+
+
+
+/* FOOTER */
+
+#footer {
+    /* Layout Properties */    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+    height: 147px;
+    /* UI Properties */
+    background: #FBF8F5;
+}
+
+#footer > p {
+    margin-left: 150px;
+    font: normal normal normal 16px/19px Montserrat;
+
+}
+
+#iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    margin-right: 60px;
+
+}
+.iconSmall {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+.iconSmall:hover {
+    height: 22px;
+    width: 22px;
+    margin: 9px;
+}

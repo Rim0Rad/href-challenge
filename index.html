@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+<body id="body">
+    <div id="header">
+        <div id="background"></div>
+        <img id="logo" src="./assets/sevenliving-logo.svg">
+        <h1>COMING SOON</h1>
+        <div id="buttonContainer">
+            <button id="button" onclick=""><a href="#mainAnchor"><img id="buttonImage" src="/assets/down-arrow.svg"></a></button>
+        </div>
+    </div>
+    <div id="main">
+        <a id="mainAnchor"></a>
+        <div id="mainTextContainer">
+            <p id="mainText">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div id="separator"></div>
+        <div id="contactDetailsBar">
+            <a href="tel:0121 468 3265"><img className="contactIcon" src="/assets/phone.svg"></a>
+            <p>0121 468 3265</p>
+            <a href="mailto:hello@sevenliving.com"><img className="contactIcon" src="/assets/mail.svg"></a>
+            <p>hello@sevenliving.com</p>
+            <a href="https://www.google.com/maps/place/97+Park+Ln,+London+W1K+7TB/@51.5103603,-0.1562333,17z/data=!4m6!3m5!1s0x48760533cfcea07d:0x63ef84699e86f92e!8m2!3d51.5103603!4d-0.1562333!16s%2Fg%2F11j7h0gyy7?entry=ttu" target="_blank"><img className="contactIcon" src="/assets/location.svg"></a>
+            <p>97 Park Lane, London, W1K 7TG</p>
+        </div>
+        <div id="contactPanel">
+            <!-- Set action to: "https://formsubmit.co/[your Email]" to allow sending the message to your email-->
+            <form id="inputPanel" action="" method="POST">
+                <h2>Send us a message</h2>
+                <div id="inputBox">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email address" required>
+                </div>
+                <textarea id="messageBox" type="text" placeholder="Your message" required></textarea>
+                <div id="submitBTContainer">
+                    <input id="messageSubmitBT" type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <p>© SevenLiving 2020</p>
+        <div id="iconContainer">
+            <a href="https://www.facebook.com/staysevenliving/" target="_blank"><image class="iconSmall" src="/assets/facebook-icon.svg"></a>
+            <a href="https://twitter.com/sevenliving?lang=en" target="_blank"><image class="iconSmall" src="/assets/twitter-icon.svg"></a>
+            <a href="https://www.instagram.com/wearesevenliving/" target="_blank"><image class="iconSmall" src="/assets/instagram-icon.svg"></a>
+        </div>
+    </div>
+</body>
+</html>
